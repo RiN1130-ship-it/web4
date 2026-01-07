@@ -11,8 +11,8 @@ body {
   min-height: 100vh;
   background: linear-gradient(135deg, #e8f0ff, #ffffff);
   display: flex;
-  justify-content: center; /* 横中央 */
-  align-items: flex-start; /* 上寄せ */
+  justify-content: center; 
+  align-items: flex-start; 
   padding: 40px 0;
   color: #1e3a8a;
 }
@@ -28,7 +28,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  align-items: center; /* ← 中央揃えの要 */
+  align-items: center; 
 }
 
 /* ===== 見出し ===== */
@@ -49,7 +49,7 @@ h1 {
 
   display: flex;
   flex-direction: column;
-  align-items: center; /* 中央揃え */
+  align-items: center; 
   gap: 12px;
 }
 
@@ -69,7 +69,7 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 11px;
 }
 
 /* ===== 計算方法選択 ===== */
