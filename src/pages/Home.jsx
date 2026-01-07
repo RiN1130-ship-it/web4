@@ -18,7 +18,6 @@ function Home() {
   const [selectedId, setSelectedId] = useState(null);
   const [result, setResult] = useState(null);
 
-  /* 初回：localStorage → state */
   useEffect(() => {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved) {
@@ -26,7 +25,6 @@ function Home() {
     }
   }, []);
 
-  /* state変更 → localStorage */
   useEffect(() => {
     localStorage.setItem(
       STORAGE_KEY,
@@ -34,7 +32,7 @@ function Home() {
     );
   }, [probabilities]);
 
-  /* 追加 */
+  
   const addProbability = (prob) => {
     setProbabilities(prev => [...prev, prob]);
   };
