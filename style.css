@@ -1,0 +1,110 @@
+/* ===== 全体リセット ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== ページ全体 ===== */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e8f0ff, #ffffff);
+  display: flex;
+  justify-content: center; /* 横中央 */
+  align-items: flex-start; /* 上寄せ */
+  padding: 40px 0;
+  color: #1e3a8a;
+}
+
+/* ===== メインコンテナ ===== */
+.container {
+  width: 100%;
+  max-width: 800px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ← 中央揃えの要 */
+}
+
+/* ===== 見出し ===== */
+h1 {
+  margin-bottom: 24px;
+  color: #1d4ed8;
+  text-align: center;
+}
+
+/* ===== 各セクション ===== */
+.section {
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f5f9ff;
+  border: 1px solid #dbe7ff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 中央揃え */
+  gap: 12px;
+}
+
+/* ===== 入力・セレクト ===== */
+input,
+select {
+  width: 260px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #93c5fd;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* ===== チェックボックス1行 ===== */
+.probability-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* ===== 計算方法選択 ===== */
+.method-select {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ===== ボタン ===== */
+button {
+  margin-top: 16px;
+  padding: 12px 32px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* ===== 結果表示 ===== */
+.result {
+  margin-top: 20px;
+  padding: 16px;
+  width: 100%;
+  text-align: center;
+  background: #eff6ff;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #1e40af;
+}
