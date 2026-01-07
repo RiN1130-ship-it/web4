@@ -32,14 +32,16 @@ function Home() {
     );
   }, [probabilities]);
 
-  
+
   const addProbability = (prob) => {
     setProbabilities(prev => [...prev, prob]);
   };
   const deleteProbability = (id) => {
-  setProbabilities(prev =>
-    prev.filter(p => p.id !== id));
+    setProbabilities(prev => prev.filter(p => p.id !== id));
+    setSelectedIds(prev => prev.filter(x => x !== id)); // 選択状態もリセット
   };
+
+
 
   return (
     <div>
@@ -56,6 +58,7 @@ function Home() {
         probabilities={probabilities}
         selectedIds={selectedIds}
         onChange={setSelectedIds}
+        onDelete={deleteProbability}
       />
 
       <CalculateForm
